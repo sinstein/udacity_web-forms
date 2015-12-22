@@ -1,3 +1,9 @@
+/*
+#f0eceb
+#729f98
+#283018
+#aa863a
+*/
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0px 0px 10px 0px;
@@ -10,14 +16,74 @@ body {
 header {
   display: block;
   height: 50px;
-  background: #9cf;
+  background: #729f98;
   min-width: 100%;
   padding: 0px 10px;
   font-size: 2em;
 }
 
+.input-label {
+  display: block;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
 
-@media screen and (max-width: 650px) {
+.checkout-form {
+  margin: 0 auto;
+}
+
+.progress-bar {
+  height: 50px;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 0;
+  margin-top: 20px;
+}
+
+.eql-w {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 50px;
+  width: 25%;
+  font-size: 15px;
+  padding: 10px 20px;
+  background: #aa863a;
+}
+
+.eql-w.active {
+  background: #f0eceb;
+}
+
+
+form {
+  box-sizing: border-box;
+  width: 50%;
+  background: #f0eceb;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+input {
+  width: 120px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 0;
+}
+
+.submit-btn {
+  display: block;
+  margin-top: 20px;
+  /*color: #abc;*/
+  background: #abc;
+}
+
+.submit-btn:hover {
+  background: #89a;
+}
+
+/*@media screen and (max-width: 650px) {
   header {
     font-size: 1.5em;
   }
@@ -124,4 +190,4 @@ tr:nth-child(even) {
 
 .check-correct {
   margin-top: 10px;
-}
+}*/

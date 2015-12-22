@@ -14,21 +14,75 @@
   </header>
   
   <section class="progress-bar">
-    Seems like this could be a good place for a progress bar...
+    <!-- Seems like this could be a good place for a progress bar... -->
+    <div class="eql-w">Personal</div>
+    <div class="eql-w active">Address</div>
+    <div class="eql-w">Credit Card</div>
+    <div class="eql-w">Overview</div>
   </section>
   
-  <div class="personal-details">
-    <form action="" id="personal-details">
+  <div class="personal-details-form checkout-form">
+    <form id="personal-details">
         <h3>Your Name and Demographic Information</h3>
-        <label for="name">Name
+        <label for="name">
+          <span class="input-label">Name</span>
           <input type="text" id="name" autocomplete="name" placeholder="John Doe">
         </label>
-        <label for="email">Email Address
+        <label for="email">
+          <span class="input-label">Email Address</span>
           <input type="text" id="email" autocomplete="email" placeholder="john@example.com">
         </label>
-        <label for="mailing-perm">Put me on the mailing list?
+        <label for="mailing-perm">
+          <span class="input-label">Put me on the mailing list?</span>
           <input class="inline" type="checkbox" id="mailing-perm">
         </label>
+        <input id="personal-details-submit" type="submit" class="submit-btn">
+    </form>
+  </div>
+  <div class="shipping-address-form checkout-form">
+    <form id="shipping-address">
+      <h3>Your Shipping Address</h3>
+      <label for="name">
+        <span class="input-label">First Name</span>
+        <input type="text" id="name" autocomplete="name" placeholder="John Doe">
+      </label>
+      <label for="addr1">
+        <span class="input-label">Address Line 1</span>
+        <input type="text" id="addr1" autocomplete="address-line1">
+      </label>
+      <label for="addr2">
+        <span class="input-label">Address Line 2</span>
+        <input type="text" id="addr2" autocomplete="oaddress-line2">
+      </label>
+      <label>
+        <span class="input-label">City</span>
+        <input type="text">
+      </label>
+      <label>
+        <span class="input-label">State/Province</span>
+        <input type="text">
+      </label>
+      <label>
+        <span class="input-label">Postal Code</span>
+        <input type="text">
+      </label>
+      <label>
+        <span class="input-label">Country</span>
+        <input type="text">
+      </label>
+      <input id="shipping-submit" type="submit" class="submit-btn">
+    </form>
+  </div>
+  <div class="cc-details-form checkout-form">
+    <form action="" id="credit-card">
+      <h3></h3>
+      <input id="cc-details-submit" type="submit" class="submit-btn">
+    </form>
+  </div>
+  <div class="billing-address-form checkout-form">
+    <form action="" id="billing-address">
+      <h3></h3>
+      <input id="billing-submit" type="submit" class="submit-btn">
     </form>
   </div>
 <!-- 
@@ -146,7 +200,7 @@
     <label class="check-correct">Is your order correct?
       <input type="checkbox">
     </label>
-    <input id="submit" type="submit">
+    <input id="submit" type="submit" class="submit-btn">
   </section> -->
   <script>
     // var submit = document.querySelector('#submit');
